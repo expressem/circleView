@@ -25,7 +25,9 @@
     circle.center = self.view.center;
     circle.startValue = .5;
     circle.lineWidth  = 3;
-    circle.lineColor = [UIColor redColor];
+    circle.backLineWidth = 2;
+    circle.lineColor = [UIColor blueColor];
+    circle.backLineColor = [UIColor redColor];
     [self.view addSubview:circle];
     
     [self performSelector:@selector(delayAnimation) withObject:nil afterDelay:3];
